@@ -1,2 +1,2 @@
 # Apps-Script-TXT2DOC
-Automate conversion of  .txt files to .doc with Google Apps Script
+Automate Conversion of text files (*.txt) to docs files (.doc) with Google Apps Script (JavaScript).
