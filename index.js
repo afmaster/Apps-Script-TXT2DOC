@@ -1,25 +1,20 @@
 function txtToDoc() {
 
-  const destinationOperados = DriveApp.getFolderById("1kEjSGZOyemkuMkztfUja9Vc_tNoBq9kY");
+  const destinationOperados = DriveApp.getFolderById("YOUR FOLDER ID HERE");
 
-  let files = destinationOperados.getFiles();
+  letÂ filesÂ =Â destinationOperados.getFiles();
 
-  while (files.hasNext()) {
-    let file = files.next();
-    let fileStr = file.toString();
+  whileÂ (files.hasNext())Â {
+    letÂ fileÂ =Â files.next();
+    letÂ fileStrÂ =Â file.toString();
     let fileNameList = fileStr.split(".");
     let fileNameFirst = fileNameList[0];
     let fileName = fileNameFirst.toString();
     Logger.log(fileStr);
 
-    //let fr = new FileReader();
-    //txtText = fr.readAsText(file);
-
     var txtText = file.getBlob().getDataAsString();
     Logger.log(txtText);
-
     
-
     docName = (fileName + '.doc');
 
     try {
